@@ -22,13 +22,19 @@ header {
 }
 
 .logo{
-	transition: width 2s, height 2s;
+	width:200px;
+	height: 70px;
+	position: absolute;
+	z-index: 1;
+	border-radius: 0px;
+	transition: width 1s, border-radius 1s;
 }
 
 .logo:hover{
-	transition: width 2s, height 2s;
-	width: 30px;
-	height: 30px;
+	transition: width 1s, border-radius 1s;
+	width: 960px;
+	border-radius: 90px;
+	z-index: 1;
 }
 
 .header_inner{
@@ -42,6 +48,12 @@ header {
 	margin-top: 14px;
 }
 
+.header_inner ul{
+	float: right;
+	position: relative;
+	margin-right: 60px;
+}
+
 .header_inner ul li{
 	display: inline-block;
 	margin-right: 100px;
@@ -50,7 +62,7 @@ header {
 
 .header_inner a{
 	color: #006600;
-	transition: color 2s, transform 1s;
+	transition: color 360ms, transform 360ms;
 }
 
 .header_inner a:hover{
